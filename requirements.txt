@@ -1,0 +1,6 @@
+streamlit
+pandas
+numpy
+matplotlib/seaborn(for visuallization)
+scikit-learn
+pickle-mixin
