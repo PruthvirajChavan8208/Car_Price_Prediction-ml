@@ -37,5 +37,5 @@ if st.sidebar.button("Predict"):
     #myinput=pd.DataFrame(data=data,columns=columns)
     myinput =pd.DataFrame([[company,name,int(year),int(kms_driven),fuel_type]],columns=columns)
     result=model.predict(myinput)
-    st.sucess(f'The predicted price is:{np.round(result[0],2)}')
+    st.success(f'The predicted price is:{np.round(result[0],2)}')
     st.write("Predicted price:",result[0,0])
