@@ -1,6 +1,7 @@
 streamlit
 pandas
 numpy
-matplotlib/seaborn(for visuallization)
+matplotlib
+seaborn
 scikit-learn
 pickle-mixin
