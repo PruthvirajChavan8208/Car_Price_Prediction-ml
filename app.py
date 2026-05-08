@@ -27,13 +27,15 @@ st.write("You selected",company,name)
 
 if st.sidebar.button("Predict"):
     columns=["company","name","year","kms_driven","fuel_type"]
-    data=[[company,name,year,kms_driven,fuel_type]]
-    st.write("You Provide Following Information:")
-    st.write("Comapny:",company)
-    st.write("Name:",name)
-    st.write("Year:",year)
-    st.write("Total Kms_driven:",kms_driven)
-    st.write("Fuel Type:",fuel_type)
-    myinput=pd.DataFrame(data=data,columns=columns)
+    # data=[[company,name,year,kms_driven,fuel_type]] --for anaconda prompt--
+    # st.write("You Provide Following Information:")
+    # st.write("Comapny:",company)
+    # st.write("Name:",name)
+    # st.write("Year:",year)
+    # st.write("Total Kms_driven:",kms_driven)
+    # st.write("Fuel Type:",fuel_type)
+    #myinput=pd.DataFrame(data=data,columns=columns)
+    myinput =pd.DataFrame([[company,name,int(year),int(kms_driven),fuel_type]],columns=columns)
     result=model.predict(myinput)
+    st.sucess(f'The predicted price is:{np.round(result[0],2)}')
     st.write("Predicted price:",result[0,0])
