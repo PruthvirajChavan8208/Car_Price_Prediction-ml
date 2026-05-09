@@ -21,4 +21,4 @@ This is a Machine Learning web application that predicts the price of a car base
 ## 🔧 How to Run Locally
 1. Clone the repository:
    `bash
-   git clone <your-repo-link>
+   git clone <(https://carpriceprediction-ml-hpqukxjfpteerh3xnrfcv3.streamlit.app/)>
